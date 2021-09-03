@@ -22,12 +22,6 @@ def tracker(ronin_add, name):
     print("Last SLP claimed: " + str(dic.get("last_claim_timestamp")))
     print(dic)
 
-#isko_list = {"mark": "ronin:666382e01b0af19a026f77b33f9ed82863271950",
-           #  "Berto Lang": "ronin:2b58d7ddde59063f208462ae9a7cd7cd618172ec",
-           # "Nelson": "ronin:23598112e88e82505e836bd65451d80c80acc0a7",
-           # "Marj": "ronin:6040c9af3b02317b28c9547b51170c7ee8f8b853",
-           #  "Kraaam": "ronin:9fa04682c8222cd3bd13737e1b0a71bfc61ba9c5"}
-
 def banner():
     res = """
             *********************************************************
