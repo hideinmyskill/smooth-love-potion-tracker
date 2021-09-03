@@ -41,10 +41,17 @@ def banner():
             """
     return print(res)
 
-# Open a text file that contains the name and ronin address in dictionary.
-js = open("ronin_address.txt", "r")
-data = json.load(js)
-js.close()
+while True:
+    try:
+        # Open a text file that contains the name and ronin address in dictionary.
+        js = open("ronin_address.txt", "r")
+        data = json.load(js)
+        js.close()
+        break
+
+    except:
+        print("ronin_address.txt not found")
+        exit()
 
 for index, (key, value) in enumerate(data.items()):
    res = tracker(value, key)
